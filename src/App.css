@@ -1,3 +1,8 @@
 .App {
   text-align: center;
 }
+
+li {
+  list-style: decimal;
+  line-height: 2;
+}

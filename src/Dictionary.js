@@ -1,13 +1,16 @@
 import { useState } from "react";
 import axios from "axios";
+import Meanings from "./Meanings";
 
 export default function Dictionary() {
-  const [userInput, setUserInput] = useState("");
+  const [userInput, setUserInput] = useState(null);
+  const [inputResult, setInputResult] = useState(null);
+
   function handleResponse(response) {
-    console.log(response);
+    setInputResult(response.data[0]);
   }
 
-  function getDefinition(event) {
+  function getValue(event) {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`;
     axios.get(apiUrl).then(handleResponse);
@@ -19,8 +22,9 @@ export default function Dictionary() {
   }
 
   return (
-    <form onSubmit={getDefinition}>
+    <form onSubmit={getValue}>
       <input type="search" onChange={handleInput} />
+      <Meanings result={inputResult} />
     </form>
   );
 }
