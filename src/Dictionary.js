@@ -1,10 +1,16 @@
 import { useState } from "react";
+import axios from "axios";
 
 export default function Dictionary() {
   const [userInput, setUserInput] = useState("");
+  function handleResponse(response) {
+    console.log(response);
+  }
+
   function getDefinition(event) {
     event.preventDefault();
-    alert(`looking for ${userInput} definiton`);
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleInput(event) {
