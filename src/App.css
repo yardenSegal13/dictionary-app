@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(255, 221, 227);
+  background-image: url("./book_ends.jpg");
+  background-size: 100%;
 }
 
 .App {
@@ -20,7 +21,7 @@ audio {
 }
 
 section {
-  background: white;
+  background: rgb(255, 221, 227);
   margin-top: 15px;
   padding: 20px;
   border-radius: 10px;
