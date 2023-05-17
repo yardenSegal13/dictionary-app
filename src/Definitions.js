@@ -6,7 +6,6 @@ export default function Definitions(props) {
     <div>
       <h3>{props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map(function (definition, index) {
-        console.log(definition);
         if (index < 3) {
           return (
             <div key={index}>
