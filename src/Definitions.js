@@ -5,20 +5,18 @@ export default function Definitions(props) {
   return (
     <div>
       <h3>{props.meaning.partOfSpeech}</h3>
+
       {props.meaning.definitions.map(function (definition, index) {
         if (index < 3) {
           return (
-            <div key={index}>
-              <p>
-                <strong>Definition: </strong>
-                {definition.definition}
-              </p>
-              <p>
+            <div className="definitions" key={index}>
+              <span>• {definition.definition}</span>
+              <span>
                 <Examples examples={definition.example} />
-              </p>
-              <p>
+              </span>
+              <span>
                 <Synonyms synonyms={definition.synonyms} />
-              </p>
+              </span>
             </div>
           );
         } else {

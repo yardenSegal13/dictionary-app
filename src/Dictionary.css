@@ -1,0 +1,12 @@
+.search-form h2 {
+  font-size: 28px;
+}
+
+.search-form input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 20px;
+}

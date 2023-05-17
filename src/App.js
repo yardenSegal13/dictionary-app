@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>My Dictionary App</h1>
-        <Dictionary />
+        <Dictionary defaultInput="smile" />
         <footer>
           <small>
             This app was coded by{" "}

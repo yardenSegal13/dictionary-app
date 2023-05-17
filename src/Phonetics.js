@@ -7,7 +7,7 @@ export default function Phonetics(props) {
         if (phonetic.text && phonetic.audio) {
           return (
             <div key={index}>
-              <h5>{phonetic.text.split("/").join("")}</h5>
+              <h3>{phonetic.text.split("/").join("")}</h3>
               <PhoneticsAudio audio={phonetic.audio} />
             </div>
           );

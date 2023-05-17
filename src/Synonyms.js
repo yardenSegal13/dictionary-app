@@ -1,12 +1,12 @@
 export default function Synonyms(props) {
   if (props.synonyms.length) {
     return (
-      <ul>
-        <strong>Synonyms:</strong>
+      <div className="synonyms">
+        <span className="synonyms-heading">Synonyms: </span>
         {props.synonyms.map(function (synonym, index) {
-          return <li key={index}>{synonym}</li>;
+          return <span key={index}>{synonym}</span>;
         })}
-      </ul>
+      </div>
     );
   } else {
     return null;

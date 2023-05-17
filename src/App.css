@@ -1,8 +1,28 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(255, 221, 227);
 }
 
-li {
-  list-style: none;
-  line-height: 2;
+.App {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.App h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 60px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+audio {
+  max-width: 146px;
+  margin-top: 10px;
+}
+
+section {
+  background: white;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
