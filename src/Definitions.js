@@ -1,5 +1,6 @@
 import Examples from "./Examples";
 import Synonyms from "./Synonyms";
+import "./Definitions.css";
 
 export default function Definitions(props) {
   return (

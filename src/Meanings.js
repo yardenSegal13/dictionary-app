@@ -6,7 +6,7 @@ export default function Meanings(props) {
   if (props.result) {
     return (
       <div>
-        <section className="name-section">
+        <section className="section-headings">
           <h2>{props.result.word}</h2>
           <Phonetics phonetics={props.result.phonetics} />
         </section>

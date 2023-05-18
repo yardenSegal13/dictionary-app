@@ -1,22 +1,7 @@
-.name-section h2 {
+.section-headings h2 {
   font-size: 40px;
 }
 
-.name-section h3 {
+.section-headings h3 {
   font-size: 22px;
-}
-
-.examples,
-.synonyms {
-  opacity: 0.7;
-  font-size: 14px;
-}
-
-.synonyms-heading,
-.examples-heading {
-  text-decoration: underline;
-}
-
-.definitions {
-  margin: 20px 0;
 }

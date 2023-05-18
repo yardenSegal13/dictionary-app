@@ -1,0 +1,14 @@
+.examples,
+.synonyms {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.synonyms-heading,
+.examples-heading {
+  text-decoration: underline;
+}
+
+.definitions {
+  margin: 20px 0;
+}
