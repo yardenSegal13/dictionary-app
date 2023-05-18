@@ -3,7 +3,7 @@ import "./Photos.css";
 export default function Photos(props) {
   if (props.photos) {
     return (
-      <section>
+      <section className="dictionary-photos">
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (

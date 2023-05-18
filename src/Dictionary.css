@@ -10,3 +10,9 @@
   margin: 10px 0;
   font-size: 20px;
 }
+
+@media (max-width: 720px) {
+  .search-form h2 {
+    font-size: 20px;
+  }
+}

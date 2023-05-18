@@ -5,3 +5,13 @@
 .section-headings h3 {
   font-size: 22px;
 }
+
+@media (max-width: 720px) {
+  .section-headings h2 {
+    font-size: 24px;
+  }
+
+  .section-headings h3 {
+    font-size: 20px;
+  }
+}
